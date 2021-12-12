@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom-select.css">
+  <title>API Países</title>
+</head>
+
+<body>
+  <header class="header">
+    <button class="btn-voltar"><span>Voltar</span></button>
+  </header>
+  <section class="container">
+    <div class="searchs">
+      <div class="custom-select">
+        <span>Filtrar por região</span>
+        <select onchange="showInput(this.value)">
+          <option selected disabled value="">Escolha uma região</option>
+          <option value="">Todas</option>
+          <option value="Africa">África</option>
+          <option value="Americas">América</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europa</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </div>
+      <div class="search">
+        <form class="form-search">
+          <input type="text" placeholder="Pesquisar País" class="inputForm">
+        </form>
+      </div>
+    </div>
+    <section class="bandeiras">
+      <article class="card">
+      </article>
+    </section>
+  </section>
+  <script src="js/app.js"></script>
+  <script src="js/custom-select.js"></script>
+  <script src="js/formulario.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.detalhes-pais {
+  margin-top: 96px;
+  margin-bottom: 115px;
+  display: flex;
+}
+
+.detalhes-pais img {
+  max-width: 443px;
+  margin-right: 25px;
+}
+
+.detalhes p {
+  margin-bottom: 30px;
+  color: #454545;
+}
+
+.detalhes p span {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 767px) {
+  .detalhes-pais {
+    flex-direction: column;
+  }
+
+  .detalhes-pais img {
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+}
